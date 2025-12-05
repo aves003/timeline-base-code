@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI News Aggregator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <div class="container">
+            <header class="main-header">
+                <div class="header-content">
+                    <h1 class="app-title">AI News Aggregator</h1>
+                    <p class="app-subtitle">Stay updated with the latest AI developments</p>
+                </div>
+                <button id="refreshBtn" class="refresh-btn">
+                    <span class="btn-icon">↻</span>
+                    <span class="btn-text">Refresh</span>
+                </button>
+            </header>
+
+            <div class="stats-bar" id="statsBar">
+                <div class="stat-item">
+                    <span class="stat-label">Total Articles</span>
+                    <span class="stat-value" id="totalCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Finance AI</span>
+                    <span class="stat-value" id="financeCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Accounting AI</span>
+                    <span class="stat-value" id="accountingCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Marketing AI</span>
+                    <span class="stat-value" id="marketingCount">0</span>
+                </div>
+            </div>
+
+            <div class="controls-section">
+                <div class="section-header">
+                    <h2 class="section-title">Filter by Category</h2>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">
+                        <span class="filter-count" id="allCount">0</span>
+                        <span class="filter-label">All Articles</span>
+                    </button>
+                    <button class="filter-btn" data-category="finance">
+                        <span class="filter-count" id="financeFilterCount">0</span>
+                        <span class="filter-label">Finance AI</span>
+                    </button>
+                    <button class="filter-btn" data-category="accounting">
+                        <span class="filter-count" id="accountingFilterCount">0</span>
+                        <span class="filter-label">Accounting AI</span>
+                    </button>
+                    <button class="filter-btn" data-category="marketing">
+                        <span class="filter-count" id="marketingFilterCount">0</span>
+                        <span class="filter-label">Marketing AI</span>
+                    </button>
+                </div>
+            </div>
+
+            <div id="error" class="error-banner" style="display: none;">
+                <div class="error-content">
+                    <span class="error-icon">⚠</span>
+                    <div class="error-text">
+                        <strong>Error loading articles</strong>
+                        <p>Please check your connection and try again</p>
+                    </div>
+                </div>
+                <button class="error-dismiss" onclick="this.parentElement.style.display='none'">×</button>
+            </div>
+
+            <div id="loadingState" class="loading-state">
+                <div class="skeleton-grid">
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                    <div class="skeleton-card"></div>
+                </div>
+            </div>
+
+            <div class="articles-section" id="articlesSection" style="display: none;">
+                <div class="section-header">
+                    <h2 class="section-title" id="sectionTitle">All Articles</h2>
+                    <span class="results-count" id="resultsCount">0 articles</span>
+                </div>
+                <div class="news-grid" id="newsGrid">
+                    <!-- Articles will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

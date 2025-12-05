@@ -1,0 +1,617 @@
+/* ========================================
+   RESET AND BASE STYLES
+   ======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #f5f6fa;
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========================================
+   LAYOUT
+   ======================================== */
+.app-wrapper {
+    background: #2638C4;
+    min-height: 100vh;
+    padding: 24px 16px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   HEADER - Aesthetic Usability, Typography Hierarchy
+   ======================================== */
+.main-header {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.header-content {
+    flex: 1;
+}
+
+.app-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2638C4;
+    margin-bottom: 4px;
+    letter-spacing: -0.5px;
+}
+
+.app-subtitle {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Fitts's Law - Large, easily clickable refresh button */
+.refresh-btn {
+    background: #2638C4;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 48px;
+    box-shadow: 0 2px 4px rgba(38, 56, 196, 0.2);
+}
+
+.refresh-btn:hover {
+    background: #1B2A96;
+    box-shadow: 0 4px 8px rgba(38, 56, 196, 0.3);
+}
+
+.refresh-btn:active {
+    transform: translateY(1px);
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* ========================================
+   STATS BAR - Visual Feedback, Proximity
+   ======================================== */
+.stats-bar {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    background: #f8f9fc;
+    border-radius: 8px;
+    border-left: 4px solid #2638C4;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2638C4;
+    line-height: 1;
+}
+
+/* ========================================
+   CONTROLS SECTION - Proximity, Similarity
+   ======================================== */
+.controls-section {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.results-count {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Fitts's Law & Similarity - Large, consistent filter buttons */
+.filter-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.filter-btn {
+    background: #f8f9fc;
+    color: #2638C4;
+    border: 2px solid #e5e7eb;
+    padding: 20px 24px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    min-height: 80px;
+    justify-content: center;
+}
+
+.filter-btn:hover {
+    background: #f0f0f0;
+    border-color: #2638C4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn.active {
+    background: #2638C4;
+    color: white;
+    border-color: #2638C4;
+    box-shadow: 0 4px 12px rgba(38, 56, 196, 0.3);
+}
+
+.filter-count {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.filter-label {
+    font-size: 0.875rem;
+    opacity: 0.9;
+}
+
+/* ========================================
+   ERROR BANNER - Better feedback
+   ======================================== */
+.error-banner {
+    background: #fee;
+    border: 2px solid #fcc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.error-content {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.error-icon {
+    font-size: 1.5rem;
+    color: #d32f2f;
+}
+
+.error-text strong {
+    display: block;
+    color: #d32f2f;
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.error-text p {
+    color: #666;
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.error-dismiss {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.error-dismiss:hover {
+    background: #fcc;
+    color: #d32f2f;
+}
+
+/* ========================================
+   LOADING STATE - Doherty Threshold, Skeleton UI
+   ======================================== */
+.loading-state {
+    margin-bottom: 24px;
+}
+
+.skeleton-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+}
+
+.skeleton-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    height: 400px;
+    position: relative;
+}
+
+.skeleton-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.5),
+        transparent
+    );
+    animation: skeleton-loading 1.5s infinite;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/* ========================================
+   ARTICLES SECTION
+   ======================================== */
+.articles-section {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================================
+   NEWS GRID - Miller's Law, Chunked information
+   ======================================== */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 24px;
+}
+
+/* ========================================
+   ARTICLE CARD - Aesthetic Usability, Hierarchy
+   ======================================== */
+.article-card {
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.article-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border-color: #2638C4;
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+.article-content {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Proximity - Group related metadata */
+.article-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Similarity - Consistent badge styling */
+.category-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.category-badge.finance {
+    background: #2638C4;
+    color: white;
+}
+
+.category-badge.accounting {
+    background: #4A5FD1;
+    color: white;
+}
+
+.category-badge.marketing {
+    background: #1B2A96;
+    color: white;
+}
+
+.article-source {
+    font-size: 0.875rem;
+    color: #666;
+    font-weight: 500;
+}
+
+/* Typography hierarchy */
+.article-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.article-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.article-title a:hover {
+    color: #2638C4;
+}
+
+.article-description {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Proximity - Group footer elements */
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 2px solid #f0f0f0;
+    margin-top: auto;
+}
+
+.article-date {
+    font-size: 0.875rem;
+    color: #999;
+}
+
+/* Fitts's Law - Larger, more visible CTA */
+.read-more {
+    color: #2638C4;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    background: #f8f9fc;
+}
+
+.read-more:hover {
+    background: #2638C4;
+    color: white;
+}
+
+/* ========================================
+   EMPTY STATE
+   ======================================== */
+.no-articles {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 80px 20px;
+    color: #666;
+}
+
+.no-articles p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.no-articles small {
+    font-size: 0.95rem;
+    color: #999;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN - Mobile optimization
+   ======================================== */
+@media (max-width: 768px) {
+    .app-wrapper {
+        padding: 16px 12px;
+    }
+
+    .main-header {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 24px;
+    }
+
+    .refresh-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .app-title {
+        font-size: 1.75rem;
+    }
+
+    .stats-bar {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+    }
+
+    .controls-section {
+        padding: 20px;
+    }
+
+    .filter-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-btn {
+        flex-direction: row;
+        justify-content: space-between;
+        min-height: 60px;
+        padding: 16px 20px;
+    }
+
+    .filter-count {
+        font-size: 1.5rem;
+    }
+
+    .articles-section {
+        padding: 20px;
+    }
+
+    .news-grid,
+    .skeleton-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .article-content {
+        padding: 20px;
+    }
+
+    .article-title {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-wrapper {
+        padding: 12px 8px;
+    }
+
+    .main-header {
+        padding: 20px;
+    }
+
+    .app-title {
+        font-size: 1.5rem;
+    }
+
+    .app-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .stats-bar {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+
+    .controls-section,
+    .articles-section {
+        padding: 16px;
+    }
+
+    .section-title {
+        font-size: 1.1rem;
+    }
+
+    .article-content {
+        padding: 16px;
+        gap: 12px;
+    }
+
+    .article-footer {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .read-more {
+        text-align: center;
+    }
+}
