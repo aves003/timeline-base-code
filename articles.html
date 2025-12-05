@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Articles - AI Evolution</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">AI Evolution</div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Timeline</a>
+                <a href="articles.html" class="nav-link active">Research Articles</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header>
+            <div class="header-decoration"></div>
+            <h1>Research Articles</h1>
+            <p class="subtitle">In-Depth Analysis of AI in Business</p>
+        </header>
+
+        <!-- Search and Filter Section -->
+        <div class="articles-controls">
+            <div class="search-bar">
+                <input type="text" id="article-search" placeholder="Search articles..." />
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Fields</button>
+                <button class="filter-btn" data-filter="marketing">Marketing</button>
+                <button class="filter-btn" data-filter="accounting">Accounting</button>
+                <button class="filter-btn" data-filter="finance">Finance</button>
+            </div>
+        </div>
+
+        <!-- Articles Grid -->
+        <div id="articles-grid" class="articles-grid">
+            <!-- Articles will be loaded here from API or data -->
+        </div>
+
+        <footer>
+            <p>MIS Class Project - 2024</p>
+        </footer>
+    </div>
+
+    <script src="articles.js"></script>
+</body>
+</html>
