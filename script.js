@@ -2,120 +2,141 @@
 const timelineData = [
     // Marketing Events
     {
-        year: 2015,
-        field: "marketing",
-        summary: "Facebook introduces advanced AI-powered ad targeting algorithms.",
-        details: "Facebook revolutionized digital advertising by implementing sophisticated machine learning algorithms that analyze user behavior, interests, and demographics. This allowed businesses to target their ideal customers with unprecedented precision, dramatically improving ad ROI and transforming the digital marketing landscape. The system could predict user preferences and optimize ad delivery in real-time, making marketing campaigns more effective and cost-efficient.",
-        source: "Meta Business Help Center - About Facebook Ads Machine Learning"
-    },
-    {
         year: 2018,
         field: "marketing",
-        summary: "AI chatbots become mainstream for customer service and lead generation.",
+        summary: "AI chatbots evolve from simple FAQ systems to natural language conversations.",
         details: "Companies widely adopted AI-powered chatbots to handle customer inquiries 24/7, reducing response times and operational costs. These intelligent assistants could understand natural language, provide personalized recommendations, and qualify leads automatically. Major brands reported up to 80% reduction in customer service costs while improving customer satisfaction scores. The technology enabled businesses to scale their customer engagement without proportionally increasing staff.",
-        source: "Gartner - Chatbot Market Analysis 2018"
+        source: "IBM - AI in Marketing (2025)"
+    },
+    {
+        year: 2020,
+        field: "marketing",
+        summary: "AI-based personalization becomes standard in digital marketing.",
+        details: "Machine learning began predicting customer behavior at scale, while AI chatbots provided real-time support across digital channels. Predictive AI analyzed patterns to anticipate outcomes like customer purchases based on past behavior. Marketers leveraged lookalike modeling, audience segmentation, and automated retargeting with optimized messaging. This era marked the shift from basic automation to intelligent, data-driven marketing strategies.",
+        source: "Salesforce - What Is AI Marketing (2025)"
     },
     {
         year: 2022,
         field: "marketing",
-        summary: "GPT-3 and AI content generation tools transform content marketing strategies.",
-        details: "The release of advanced language models like GPT-3 revolutionized content creation, enabling marketers to generate high-quality blog posts, social media content, and ad copy at scale. Tools like Jasper and Copy.ai emerged, allowing small teams to produce enterprise-level content output. However, this also raised important questions about content authenticity, SEO implications, and the balance between AI-generated and human-created content in maintaining brand voice and authenticity.",
-        source: "OpenAI Research - GPT-3 Applications in Marketing"
+        summary: "ChatGPT launch sparks explosion of AI content generation use cases.",
+        details: "OpenAI's ChatGPT revolutionized content creation, enabling marketers to generate high-quality blog posts, social media content, and ad copy at scale. Generative AI created new content based on learned patterns, allowing small teams to produce enterprise-level output. Tools like Jasper and Copy.ai emerged for cultural adaptation and personalized content across diverse audiences. However, this raised important questions about content authenticity, SEO implications, and maintaining brand voice.",
+        source: "Wake Forest University - How AI Is Impacting Digital Marketing (2024)"
     },
     {
         year: 2025,
         field: "marketing",
-        summary: "Predictive AI models forecast customer behavior with 85%+ accuracy.",
-        details: "Advanced machine learning systems now analyze vast datasets to predict customer purchasing patterns, churn risk, and lifetime value with remarkable accuracy. Marketing teams use these insights to proactively engage customers at optimal times with personalized offers. The technology integrates data from multiple touchpoints including social media, browsing behavior, purchase history, and even external factors like weather and economic indicators to create comprehensive customer profiles and predictive models.",
-        source: "McKinsey & Company - The Future of Predictive Analytics in Marketing"
+        summary: "AI copilots emerge as built-in marketing assistants with enhanced capabilities.",
+        details: "Advanced AI systems now power personalized recommendation engines on e-commerce sites, continuously collecting and analyzing data. Visual content recognition identifies people, places, and objects in images and videos, enabling automated tagging and enhanced search. AI optimizes personalized pricing strategies, incentive offers, and workflow automation for data entry, transcription, and social media management. Marketing processes are being completely reimagined end-to-end.",
+        source: "IBM - AI in Marketing (2025)"
     },
     {
-        year: 2028,
+        year: 2030,
         field: "marketing",
-        summary: "AI-driven hyper-personalization creates unique experiences for each customer.",
-        details: "Future marketing platforms will leverage AI to create completely individualized customer journeys, dynamically adjusting content, product recommendations, pricing, and communication channels in real-time based on individual preferences and context. Every customer interaction will be optimized using reinforcement learning algorithms that continuously improve based on outcomes. This level of personalization will blur the lines between marketing, sales, and customer service, creating seamless, AI-orchestrated customer experiences across all touchpoints.",
-        source: "Forrester Research - Hyper-Personalization Trends 2028"
+        summary: "AI marketing industry surpasses $1.5 trillion globally with complete process automation.",
+        details: "The worldwide AI market exceeds $1.5 trillion as predicted, with automated campaign creation, performance tracking, and enhanced content types including videos, music, and images all powered by AI. Complete reimagining of marketing processes includes AI analyzing unorganized data for predictions, automated customer journey optimization, and seamless integration across all marketing channels. Human marketers focus on strategy and creativity while AI handles execution and optimization.",
+        source: "Salesforce - What Is AI Marketing (2025)"
     },
 
     // Accounting Events
     {
+        year: 1985,
+        field: "accounting",
+        summary: "Microsoft Excel launches, revolutionizing accounting automation.",
+        details: "Excel automated tasks previously done manually including financial statements and expense tracking. It became intrinsic to accounting practice, establishing spreadsheet proficiency as a minimum requirement for all accountants. This marked the beginning of digital transformation in accounting, replacing manual ledgers and calculators with dynamic, automated systems that could handle complex calculations and data management.",
+        source: "New Resources Consulting - A Brief History of Accounting Technology (2025)"
+    },
+    {
         year: 2016,
         field: "accounting",
-        summary: "OCR and AI automate invoice processing and data entry tasks.",
-        details: "Optical Character Recognition combined with machine learning algorithms began automating the tedious process of invoice processing and data entry. Systems could now extract information from scanned documents, match invoices to purchase orders, and flag discrepancies without human intervention. This technology reduced processing time by up to 90% and virtually eliminated data entry errors, allowing accounting professionals to focus on analysis and strategic tasks rather than manual data handling.",
-        source: "Journal of Accountancy - AI and Automation in Accounting"
+        summary: "AI automation begins transforming data entry and invoice processing.",
+        details: "Optical Character Recognition combined with machine learning algorithms automated the tedious process of invoice processing and data entry. Systems extracted information from scanned documents, matched invoices to purchase orders, and flagged discrepancies without human intervention. This technology reduced processing time by up to 90% and virtually eliminated data entry errors, allowing accounting professionals to focus on analysis and strategic tasks rather than manual data handling.",
+        source: "Accountancy Age - How AI is Revolutionising Accounting (2024)"
     },
     {
-        year: 2019,
+        year: 2020,
         field: "accounting",
-        summary: "AI-powered fraud detection systems identify anomalies in financial transactions.",
-        details: "Machine learning algorithms became sophisticated enough to detect fraudulent activities by analyzing patterns in financial transactions. These systems could identify unusual spending patterns, duplicate invoices, and suspicious vendor activities in real-time. Companies implementing AI fraud detection reported 60% faster fraud discovery and prevented millions in potential losses. The technology continuously learned from new fraud patterns, making it increasingly effective over time.",
-        source: "ACFE - Fraud Detection Technology Report 2019"
+        summary: "Cloud-based accounting solutions enable remote work and real-time collaboration.",
+        details: "Cloud computing transformed accounting with remote access to financial data and seamless collaboration across geographical locations. Real-time integration with business systems provided universal access to the same information. This shift was accelerated by the global pandemic, making cloud-based platforms essential for business continuity. Security measures were enhanced with AI-powered cybersecurity identifying unusual activities and threats in real-time.",
+        source: "Oracle NetSuite - AI in Accounting: A Transformation (2025)"
     },
     {
-        year: 2021,
+        year: 2024,
         field: "accounting",
-        summary: "Cloud-based AI accounting platforms enable real-time financial reporting.",
-        details: "Platforms like QuickBooks and Xero integrated advanced AI capabilities to provide real-time financial insights and automated bookkeeping. These systems could categorize transactions automatically, reconcile accounts, and generate financial reports instantly. Small businesses gained access to enterprise-level financial analysis previously available only to large corporations with dedicated accounting teams. The shift to cloud-based AI platforms democratized sophisticated financial management tools.",
-        source: "Intuit - QuickBooks AI Features Documentation"
+        summary: "Intuit launches AI-powered Intuit Assist for QuickBooks accounting automation.",
+        details: "On November 20, 2024, Intuit launched Intuit Assist, a generative AI-powered financial assistant integrated into QuickBooks. This marked a major milestone in bringing advanced AI capabilities to small and medium businesses. The tool provided real-time insights, automated bookkeeping tasks, and offered intelligent recommendations for financial management. It represented the democratization of AI-powered accounting, making enterprise-level capabilities accessible to businesses of all sizes.",
+        source: "Intuit - Intuit Assist for QuickBooks Launch (2024)"
     },
     {
-        year: 2026,
+        year: 2025,
         field: "accounting",
-        summary: "AI auditors conduct continuous monitoring and compliance checking.",
-        details: "Artificial intelligence systems will perform ongoing audit functions, continuously monitoring transactions for compliance with accounting standards and regulations. These AI auditors will analyze 100% of transactions rather than statistical samples, providing unprecedented assurance and catching issues in real-time. The technology will significantly reduce the time and cost of traditional audits while improving accuracy and compliance. Human auditors will shift to advisory roles, interpreting AI findings and providing strategic guidance.",
-        source: "Deloitte - The Future of Audit: AI and Continuous Monitoring"
+        summary: "Intuit AI Agents create virtual team of specialized accounting assistants.",
+        details: "On July 1, 2025, Intuit rolled out AI Agents - a virtual team including Accounting Agent, Payments Agent, Customer Agent, Finance Agent, and Project Management Agent. By August 4, the major AI interface update became default for all QuickBooks Online users, with mandatory adoption by September 30, 2025. These AI agents handled routine tasks, provided real-time recommendations, and transformed accountants' roles from data entry to strategic advisory.",
+        source: "Intuit Investors - Intuit Launches AI-Powered Assist (2025)"
     },
     {
         year: 2030,
         field: "accounting",
-        summary: "Autonomous AI systems handle end-to-end accounting operations for most businesses.",
-        details: "Advanced AI will manage the entire accounting cycle from transaction recording to financial statement preparation with minimal human intervention. These systems will automatically adjust to new accounting standards, handle complex transactions like mergers and acquisitions, and provide strategic financial advice. Blockchain integration will enable real-time verification and eliminate reconciliation needs. The role of accountants will evolve to focus on strategic financial planning, interpreting AI insights, and handling complex judgment calls that require human expertise and ethical consideration.",
-        source: "PwC - The Future of Accounting: Autonomous AI Systems"
+        summary: "AI transforms accounting profession from compliance to strategic advisory role.",
+        details: "Advanced AI manages the entire accounting cycle with minimal human intervention, from transaction recording to financial statement preparation. Blockchain integration enables real-time verification and eliminates reconciliation needs. Accountants evolve from 'number crunchers' to 'trusted advisors,' focusing on strategic financial planning, data interpretation, and complex judgment calls requiring human expertise and ethics. The profession attracts a new generation of tech-savvy accountants who leverage AI as an empowerment tool.",
+        source: "NJCPA - How AI and Emerging Technologies Are Transforming the Accounting Profession (2025)"
     },
 
     // Finance Events
     {
-        year: 2014,
+        year: 1982,
         field: "finance",
-        summary: "Robo-advisors democratize investment management for retail investors.",
-        details: "Companies like Betterment and Wealthfront launched AI-powered investment platforms that provided automated portfolio management at a fraction of traditional advisory costs. These robo-advisors used algorithms to create diversified portfolios based on individual risk tolerance and goals, automatically rebalancing and tax-loss harvesting. This technology made sophisticated investment strategies accessible to average investors, disrupting the wealth management industry and forcing traditional firms to adapt.",
-        source: "Betterment & Wealthfront - Robo-Advisor White Papers 2014"
+        summary: "Renaissance Technologies founded, pioneering quantitative AI-driven hedge fund strategies.",
+        details: "James Simons founded Renaissance Technologies, one of the first hedge funds to extensively use AI and mathematical models for trading. The firm analyzed petabyte-scale data warehouses using statistical probabilities and pattern recognition. By 2021, Renaissance Technologies reached a $165 billion market cap, demonstrating the power of AI-driven quantitative finance. This pioneered the use of machine learning in investment strategies decades before it became mainstream.",
+        source: "Analyzing Alpha - History of AI in Finance (2023)"
+    },
+    {
+        year: 2006,
+        field: "finance",
+        summary: "Mint.com launches, providing personalized AI financial advice to consumers.",
+        details: "Mint.com brought AI-powered financial management to retail consumers, analyzing spending patterns, categorizing transactions, and providing personalized budgeting advice. The platform demonstrated how AI could make sophisticated financial analysis accessible to average consumers. It aggregated financial data from multiple accounts, provided spending insights, and offered recommendations for saving money and managing debt more effectively.",
+        source: "LoanWorks.ai - Artificial Intelligence in Financial Services: A Historical Review (2025)"
     },
     {
         year: 2017,
         field: "finance",
-        summary: "AI-powered algorithmic trading dominates stock market transactions.",
-        details: "High-frequency trading systems powered by machine learning algorithms began executing the majority of stock market trades. These systems could analyze market conditions, news sentiment, and historical patterns to make split-second trading decisions. The technology processed vast amounts of data far beyond human capability, identifying profitable opportunities in microseconds. While this increased market efficiency and liquidity, it also raised concerns about market volatility and the potential for AI-triggered market crashes.",
-        source: "SEC - Market Structure and High-Frequency Trading Report"
+        summary: "State Street Corporation launches NLP and machine learning for financial analysis.",
+        details: "State Street Corporation launched the Quantextual Idea Lab, using natural language processing and machine learning to analyze financial data and news. High-frequency trading (HFT) systems executed the majority of stock market trades, analyzing market conditions in milliseconds. AI processed vast amounts of data far beyond human capability, identifying profitable opportunities and making split-second trading decisions that transformed market dynamics.",
+        source: "LoanWorks.ai - Artificial Intelligence in Financial Services: A Historical Review (2025)"
     },
     {
         year: 2020,
         field: "finance",
-        summary: "Machine learning models improve credit scoring and lending decisions.",
-        details: "Financial institutions adopted AI models that analyzed thousands of data points beyond traditional credit scores to assess creditworthiness. These systems considered factors like education, employment history, and even social media activity to provide more accurate risk assessments. This technology enabled lenders to approve loans for previously underserved populations while reducing default rates. However, it also sparked debates about data privacy, algorithmic bias, and fair lending practices.",
-        source: "Federal Reserve - AI in Credit Risk Assessment Study 2020"
+        summary: "52% of financial service providers implement AI-enabled products and services.",
+        details: "Financial institutions widely adopted AI models analyzing thousands of data points beyond traditional credit scores to assess creditworthiness. Systems considered education, employment history, and behavioral patterns for more accurate risk assessments. Platforms like LendingClub used machine learning for borrower assessment, enabling loans for previously underserved populations while reducing default rates. This also sparked debates about data privacy, algorithmic bias, and fair lending practices.",
+        source: "EY - How Artificial Intelligence Is Reshaping the Financial Services Industry (2025)"
     },
     {
-        year: 2024,
+        year: 2023,
         field: "finance",
-        summary: "AI systems detect and prevent financial crimes with advanced pattern recognition.",
-        details: "Modern AI-powered anti-money laundering and fraud prevention systems analyze transaction patterns across global financial networks in real-time. These systems can identify suspicious activities by detecting anomalies, tracking fund flows, and connecting seemingly unrelated transactions. Banks report 70% improvement in detecting financial crimes while reducing false positives that frustrate legitimate customers. The technology adapts to new criminal tactics by continuously learning from emerging fraud patterns and global financial crime data.",
-        source: "FinCEN - AI in Anti-Money Laundering Report 2024"
+        summary: "EY launches EY.ai platform with $1.4 billion investment in AI capabilities.",
+        details: "In September 2023, EY launched EY.ai, a comprehensive AI platform representing a $1.4 billion investment in artificial intelligence capabilities. The platform integrated machine learning, natural language processing, and deep learning for risk management, compliance, and financial analysis. By 2024, EY.ai EYQ won the AI Excellence Award. This demonstrated how major financial services firms were making massive investments to leverage AI across all operations.",
+        source: "LoanWorks.ai - Artificial Intelligence in Financial Services: A Historical Review (2025)"
     },
     {
-        year: 2027,
+        year: 2025,
         field: "finance",
-        summary: "AI provides real-time risk assessment and portfolio optimization for all asset classes.",
-        details: "Advanced AI systems will integrate market data, geopolitical events, climate risks, and economic indicators to provide comprehensive real-time risk analysis. These platforms will automatically adjust investment portfolios across stocks, bonds, commodities, real estate, and cryptocurrencies to optimize returns while managing risk. Individual investors will have access to institutional-grade risk management tools, fundamentally changing wealth management and retirement planning.",
-        source: "Bloomberg - Future of Portfolio Management with AI"
+        summary: "AI in FinTech projected to grow by $22.6 billion with $140B in global productivity gains.",
+        details: "The FinTech revolution uses AI to disrupt traditional banking, with deep learning optimizing portfolio management and market predictions. Platforms like Alphasense and Kensho analyze financial data and news using advanced AI. Real-time dashboards provide near-instant insights, enabling faster decision-making. JP Morgan reports 20% reduction in account validation rejection rates from AI implementation. Productivity gains and cost savings reach $140 billion globally.",
+        source: "EY - How Artificial Intelligence Is Reshaping the Financial Services Industry (2025)"
     },
     {
-        year: 2029,
+        year: 2030,
         field: "finance",
-        summary: "Quantum computing and AI revolutionize financial modeling and predictions.",
-        details: "The convergence of quantum computing and artificial intelligence will enable financial models of unprecedented complexity and accuracy. These systems will simulate millions of market scenarios simultaneously, predict economic trends with high precision, and optimize multi-asset portfolios across global markets. The technology will transform derivatives pricing, risk management, and strategic financial planning. However, regulatory frameworks will struggle to keep pace with the rapid advancement of these technologies, creating new challenges for financial governance and oversight.",
-        source: "MIT Technology Review - Quantum Computing in Finance"
+        summary: "Traditional financial institutions achieve $1 trillion in cost reductions through AI.",
+        details: "AI automation eliminates repetitive manual tasks, reduces operational overhead by 22% ($1 trillion savings for traditional institutions), and enables revenue enhancement through personalized product recommendations. Customer retention improves with better AI-driven service. Marketing ROI increases by 37% through better targeting. Real-time risk assessment and compliance monitoring become standard. However, challenges remain with data quality, algorithmic transparency, and regulatory accountability.",
+        source: "EY - How Artificial Intelligence Is Reshaping the Financial Services Industry (2025)"
+    },
+    {
+        year: 2035,
+        field: "finance",
+        summary: "AI enhances financial industry value by $1.2 trillion with quantum computing integration.",
+        details: "The convergence of quantum computing and artificial intelligence enables financial models of unprecedented complexity and accuracy. Systems simulate millions of market scenarios simultaneously, predict economic trends with high precision, and optimize multi-asset portfolios across global markets. The technology transforms derivatives pricing, risk management, and strategic financial planning. Individual investors have access to institutional-grade tools, fundamentally changing wealth management and retirement planning.",
+        source: "Analyzing Alpha - History of AI in Finance (2023)"
     }
 ];
 
