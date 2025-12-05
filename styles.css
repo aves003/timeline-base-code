@@ -374,6 +374,21 @@ header h1 {
     margin-bottom: 12px;
 }
 
+.event-source {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 2px solid #E2E8F0;
+    font-size: 0.85em;
+    color: #64748B;
+    font-style: italic;
+}
+
+.event-source strong {
+    color: #0F172A;
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* Center Dot */
 .timeline-event::before {
     content: '';
